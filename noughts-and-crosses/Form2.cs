@@ -40,18 +40,27 @@ namespace noughts_and_crosses
 
                 gridLayout = gameboard.getGridLayout();
 
+                if (gameboard.getAI())
+                {
+                    gameboard.changePlayer();
+                    playersTurn = gameboard.getPlayersTurn();
+                    int choice = gameboard.AIMove(gridLayout, playersTurn);
+                    makeAIMove(choice, playersTurn);
+                 
+                }
+
                 if (gameboard.anyWinner(gridLayout))
                 {
                     Form3 playerWon = new Form3(playersTurn);
                     playerWon.ShowDialog();
                     reset();
                 }
-                else
+                else 
                 {
                     gameboard.changePlayer();
                 }
 
-                
+              
             }
         }
 
@@ -73,16 +82,27 @@ namespace noughts_and_crosses
                 }
                 gridLayout = gameboard.getGridLayout();
 
+                if (gameboard.getAI())
+                {
+                    gameboard.changePlayer();
+                    playersTurn = gameboard.getPlayersTurn();
+                    int choice = gameboard.AIMove(gridLayout, playersTurn);
+                    makeAIMove(choice, playersTurn);
+                  
+                }
+
                 if (gameboard.anyWinner(gridLayout))
                 {
                     Form3 playerWon = new Form3(playersTurn);
                     playerWon.ShowDialog();
                     reset();
                 }
-                else
+                else 
                 {
                     gameboard.changePlayer();
                 }
+
+            
             }
            
         }
@@ -104,6 +124,14 @@ namespace noughts_and_crosses
                     btn_3.Text = "0";
                 }
                 gridLayout = gameboard.getGridLayout();
+                if (gameboard.getAI())
+                {
+                    gameboard.changePlayer();
+                    playersTurn = gameboard.getPlayersTurn();
+                    int choice = gameboard.AIMove(gridLayout, playersTurn);
+                    makeAIMove(choice, playersTurn);
+                  
+                }
 
                 if (gameboard.anyWinner(gridLayout))
                 {
@@ -115,6 +143,8 @@ namespace noughts_and_crosses
                 {
                     gameboard.changePlayer();
                 }
+
+              
             }
            
         }
@@ -136,6 +166,14 @@ namespace noughts_and_crosses
                     btn_4.Text = "0";
                 }
                 gridLayout = gameboard.getGridLayout();
+                if (gameboard.getAI())
+                {
+                    gameboard.changePlayer();
+                    playersTurn = gameboard.getPlayersTurn();
+                    int choice = gameboard.AIMove(gridLayout, playersTurn);
+                    makeAIMove(choice, playersTurn);
+    
+                }
 
                 if (gameboard.anyWinner(gridLayout))
                 {
@@ -143,10 +181,12 @@ namespace noughts_and_crosses
                     playerWon.ShowDialog();
                     reset();
                 }
-                else
+                else 
                 {
                     gameboard.changePlayer();
                 }
+
+            
             }
            
         }
@@ -168,6 +208,14 @@ namespace noughts_and_crosses
                     btn_5.Text = "0";
                 }
                 gridLayout = gameboard.getGridLayout();
+                if (gameboard.getAI())
+                {
+                    gameboard.changePlayer();
+                    playersTurn = gameboard.getPlayersTurn();
+                    int choice = gameboard.AIMove(gridLayout, playersTurn);
+                    makeAIMove(choice, playersTurn);
+              
+                }
 
                 if (gameboard.anyWinner(gridLayout))
                 {
@@ -175,10 +223,12 @@ namespace noughts_and_crosses
                     playerWon.ShowDialog();
                     reset();
                 }
-                else
+                else 
                 {
                     gameboard.changePlayer();
                 }
+
+             
             }
           
         }
@@ -200,6 +250,14 @@ namespace noughts_and_crosses
                     btn_6.Text = "0";
                 }
                 gridLayout = gameboard.getGridLayout();
+                if (gameboard.getAI())
+                {
+                    gameboard.changePlayer();
+                    playersTurn = gameboard.getPlayersTurn();
+                    int choice = gameboard.AIMove(gridLayout, playersTurn);
+                    makeAIMove(choice, playersTurn);
+                 
+                }
 
                 if (gameboard.anyWinner(gridLayout))
                 {
@@ -207,10 +265,12 @@ namespace noughts_and_crosses
                     playerWon.ShowDialog();
                     reset();
                 }
-                else
+                else 
                 {
                     gameboard.changePlayer();
                 }
+
+
             }
          
         }
@@ -233,16 +293,26 @@ namespace noughts_and_crosses
                 }
                 gridLayout = gameboard.getGridLayout();
 
+                if (gameboard.getAI())
+                {
+                    gameboard.changePlayer();
+                    playersTurn = gameboard.getPlayersTurn();
+                    int choice = gameboard.AIMove(gridLayout, playersTurn);
+                    makeAIMove(choice, playersTurn);
+                  
+                }
+
                 if (gameboard.anyWinner(gridLayout))
                 {
                     Form3 playerWon = new Form3(playersTurn);
                     playerWon.ShowDialog();
                     reset();
                 }
-                else
+                else 
                 {
                     gameboard.changePlayer();
                 }
+
             }
             
         }
@@ -264,6 +334,14 @@ namespace noughts_and_crosses
                     btn_8.Text = "0";
                 }
                 gridLayout = gameboard.getGridLayout();
+                if (gameboard.getAI())
+                {
+                    gameboard.changePlayer();
+                    playersTurn = gameboard.getPlayersTurn();
+                    int choice = gameboard.AIMove(gridLayout, playersTurn);
+                    makeAIMove(choice, playersTurn);
+                  
+                }
 
                 if (gameboard.anyWinner(gridLayout))
                 {
@@ -271,10 +349,12 @@ namespace noughts_and_crosses
                     playerWon.ShowDialog();
                     reset();
                 }
-                else
+                else 
                 {
                     gameboard.changePlayer();
                 }
+
+
             }
             
         }
@@ -296,6 +376,14 @@ namespace noughts_and_crosses
                     btn_9.Text = "0";
                 }
                 gridLayout = gameboard.getGridLayout();
+                if (gameboard.getAI())
+                {
+                    gameboard.changePlayer();
+                    playersTurn = gameboard.getPlayersTurn();
+                    int choice = gameboard.AIMove(gridLayout, playersTurn);
+                    makeAIMove(choice, playersTurn);
+                   
+                }
 
                 if (gameboard.anyWinner(gridLayout))
                 {
@@ -303,10 +391,12 @@ namespace noughts_and_crosses
                     playerWon.ShowDialog();
                     reset();
                 }
-                else
+                else 
                 {
                     gameboard.changePlayer();
                 }
+
+             
             }
          
         }
@@ -324,6 +414,58 @@ namespace noughts_and_crosses
             btn_9.Text = ""; btn_9.Refresh();
 
             gameboard.reset();
+        }
+
+        private void makeAIMove(int choice, int playersTurn)
+        {
+            string symbol; 
+
+            if (playersTurn == 1)
+            {
+                symbol = "X";
+            }
+            else
+            {
+                symbol = "0";
+            }
+
+            if (choice == 0)
+            {
+                btn_1.Text = symbol;
+            }
+            else if (choice == 1)
+            {
+                btn_2.Text = symbol;
+            }
+            else if (choice == 2)
+            {
+                btn_3.Text = symbol; 
+            }
+            else if (choice == 3)
+            {
+                btn_4.Text = symbol;
+            }
+            else if (choice == 4)
+            {
+                btn_5.Text = symbol;
+            }
+            else if (choice == 5)
+            {
+                btn_6.Text = symbol;
+            }
+            else if (choice == 6)
+            {
+                btn_7.Text = symbol;
+            }
+            else if (choice == 7)
+            {
+                btn_8.Text = symbol;
+            }
+            else if (choice == 8)
+            {
+                btn_9.Text = symbol;
+            }
+
         }
     }
 }
