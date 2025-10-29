@@ -8,3 +8,5 @@ C:\Users\beatr\OneDrive - The University of Liverpool\Documents\noughts-and-cros
 C:\Users\beatr\OneDrive - The University of Liverpool\Documents\noughts-and-crosses\noughts-and-crosses\obj\Debug\noughts-and-crosses.csproj.CoreCompileInputs.cache
 C:\Users\beatr\OneDrive - The University of Liverpool\Documents\noughts-and-crosses\noughts-and-crosses\obj\Debug\noughts-and-crosses.exe
 C:\Users\beatr\OneDrive - The University of Liverpool\Documents\noughts-and-crosses\noughts-and-crosses\obj\Debug\noughts-and-crosses.pdb
+C:\Users\beatr\OneDrive - The University of Liverpool\Documents\noughts-and-crosses\noughts-and-crosses\obj\Debug\noughts_and_crosses.Form2.resources
+C:\Users\beatr\OneDrive - The University of Liverpool\Documents\noughts-and-crosses\noughts-and-crosses\obj\Debug\noughts_and_crosses.Form3.resources
